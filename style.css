@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+   display: flex;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    background: #333;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+    display: flex;
+    padding:10px 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background: #555;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #444;
+    list-style: none;
+    padding: 0;
+    min-width: 150px;
+}
+
+.dropdown li {
+    padding: 10px;
+    color: white;
+}
+
+.dropdown li:hover {
+    background: #666;
+}
+
+.menu li:hover .dropdown {
+    display: block;
+}
